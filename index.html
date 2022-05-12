@@ -13,7 +13,7 @@
       <h3>A fazer</h3>
       
 
-      <ul id="to"></ul>
+      <ul id="todo" ondrop="drop(event,this.id)" ondragover="over(event)"></ul>
 
       <div class="add-card" onclick="addCard(this)">
           <p>Adicionar Tarefa</p>
@@ -24,32 +24,24 @@
 
     <h3>Fazendo</h3>
 
-    <ul id="doing">
-        <li>
-            <p>Tarefa</p>
-            <p class="remove" onclick="removeCard(this)">x</p>
-        </li>
-    </ul>
+    <ul id="doing" ondrop="drop(event,this.id)" ondragover="over(event)"></ul>
 
     <div class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa</p>
     </div>
-    
+
   </div>
 
   <div class="board">
     <h3>Finalizada</h3>
 
 
-    <ul id="done"></ul>
+    <ul id="done" ondrop="drop(event,this.id)" ondragover="over(event)"></ul>
 
     <div class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa</p>
     </div>
   </div>
-
-
-
 
 <script src="./assets/js/script.js"></script>
 </body>

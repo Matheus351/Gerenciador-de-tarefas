@@ -16,7 +16,10 @@ body{
     background-color: rgb(246, 241, 241);
     width: 320px;
     margin: 4px;
-    display: flex;
+    display:inline-block;
+    position: relative;
+    top: 10px;
+    display: flex; 
     flex-direction: column;
 }
 
@@ -32,6 +35,7 @@ h3{
     background-color: #c3c3c3;
     margin: 4px;
     border-radius: 3px;
+    bottom: 5px;
 }
 
 .add-card:hover{
