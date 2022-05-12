@@ -13,9 +13,9 @@
       <h3>A fazer</h3>
       
 
-      <ul></ul>
+      <ul id="to"></ul>
 
-      <div class="add-card">
+      <div class="add-card" onclick="addCard(this)">
           <p>Adicionar Tarefa</p>
       </div>
   </div>
@@ -23,7 +23,7 @@
   <div class="board">
     <h3>Fazendo</h3>
 
-    <ul>
+    <ul id="doing">
         <li>
             <p>Tarefa</p>
             <p class="remove">x</p>
@@ -31,7 +31,7 @@
         
     </ul>
 
-    <div class="add-card">
+    <div class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa</p>
     </div>
   </div>
@@ -40,8 +40,9 @@
     <h3>Finalizada</h3>
 
 
-    <ul></ul>
-    <div class="add-card">
+    <ul id="done"></ul>
+
+    <div class="add-card" onclick="addCard(this)">
         <p>Adicionar Tarefa</p>
     </div>
   </div>
